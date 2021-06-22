@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SecondExample
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ The\ purpose\ of\ this\ method\ is\ to\ expose\ the\ main\ entry\ point\ for\ the\ application\n
+comment2.params=
+comment2.target=java.lang.String\ ternaryOperatorExample()
+comment3.params=
+comment3.target=void\ enumeratedTypeExample()
+numComments=4
