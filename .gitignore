@@ -86,6 +86,7 @@ target/*
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.DS_STORE
 
 # Generated files
 .idea/**/contentModel.xml
