@@ -1,0 +1,1 @@
+* Today's Demonstration was oriented around these [slides](https://zipcoder.github.io/curriculum-assets/lectures/python/strings/lecture.html)
