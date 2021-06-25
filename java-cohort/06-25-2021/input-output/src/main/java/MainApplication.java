@@ -1,7 +1,9 @@
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -14,7 +16,7 @@ public class MainApplication {
         // TODO - Define this
         String dir = System.getProperty("user.dir");
         System.out.println(dir);
-        printFileContents();
+        printWriterExample();
     }
 
     public static void printFileContents() throws IOException {
@@ -28,6 +30,9 @@ public class MainApplication {
             result += nextLineInFile;
         }
         System.out.println(result);
+    }
+    public static void printWriterExample() throws FileNotFoundException, UnsupportedEncodingException {
+        PrintWriter out = new PrintWriter("MY-NEW-FILE1.txt", "UTF-8");
     }
 
     public static void printWithPrecisionExample4() {
