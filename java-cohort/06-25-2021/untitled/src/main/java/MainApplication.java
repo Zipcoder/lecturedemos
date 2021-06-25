@@ -12,6 +12,8 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) throws IOException {
         // TODO - Define this
+        String dir = System.getProperty("user.dir");
+        System.out.println(dir);
         printFileContents();
     }
 
