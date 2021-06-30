@@ -10,12 +10,31 @@ public class MainApplication {
         nestedArrayExample();
     }
 
+    public static void variableNumberOfArguments(Object... objects) {
+        for(Object object : objects) {
+            System.out.println(object);
+        }
+    }
+
+    public static void populateArrayList() {
+        String[] arr = {"Foo", "Bar", "Baz"};
+        ArrayList<String> arrList = new ArrayList<>();
+        for(String word : arr) {
+            arrList.add(word);
+        }
+        arrList.toArray();
+        String firstElement = arrList.get(0); // get the first element of the list
+        arrList.set(2, "new one"); // sets the element at index `2` to a String value of `new one`
+        arrList.remove(1); // removes the element at index `1`
+        arrList.size();
+    }
+
     public static void particularlyTypedLists() {
         char primitiveC = 'c';
         Character nonPrimitiveC = new Character(primitiveC);
         char[] arrayOfChar = {'a','b','c'};
         Character[] arrayOfCharacters = new Character[]{'a','b','c'};
-        String stringOfCharacters = new String(arrayOfCharacters);
+//        String stringOfCharacters = new String(arrayOfCharacters);
         String stringOfChars= new String(arrayOfChar);
         ArrayList<Integer> nameOfIntegerList = new ArrayList<>();
         ArrayList<String> nameOfStringList = new ArrayList<String>();
