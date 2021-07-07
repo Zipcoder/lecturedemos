@@ -3,7 +3,7 @@
  * @version 1.0.0
  * @date 7/7/21 9:48 AM
  */
-public class Person implements Comparable<Person> {
+public class Person implements NoiseMaker, Comparable<Person> {
     private int age;
     private String name;
 
@@ -45,5 +45,15 @@ public class Person implements Comparable<Person> {
             stateOfDifference = myAge - otherPersonAge;
         }
         return stateOfDifference;
+    }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("My name is whaa");
+        System.out.println("My name is who");
+        System.out.println("My name is wicki");
+        System.out.println("My name is wicki");
+        System.out.println("My name is Slim " + this.getName());
+        System.out.println(". . . and I'm " + this.getAge() + " years old");
     }
 }
