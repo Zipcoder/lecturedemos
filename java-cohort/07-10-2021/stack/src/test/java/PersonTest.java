@@ -12,5 +12,8 @@ public class PersonTest {
     public void test() {
         Person person = new Person(0L, "Leon", "Hunter", new Date());
         Date leonBirthDate = person.birthDate.getValue();
+
+        Person[] personArray = new Person[]{new Person(), person};
+        System.out.println(personArray);
     }
 }

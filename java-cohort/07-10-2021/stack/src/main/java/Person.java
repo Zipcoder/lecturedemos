@@ -11,6 +11,9 @@ public class Person {
     public InstanceVariable<String> lastName;
     public InstanceVariable<Date> birthDate;
 
+    public Person() {
+    }
+
     public Person(Long id, String firstName, String lastName, Date birthDate) {
         this.id = new InstanceVariable<>(id);
         this.firstName = new InstanceVariable(firstName);
