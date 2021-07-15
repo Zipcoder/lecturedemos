@@ -11,6 +11,7 @@ public class MainApplication {
     }
 
     public void demo() {
+        new StringBuilder().deleteCharAt()
         Stack<String> stack = new Stack<>();
         stack.push("Hello world");
         System.out.println(stack.isEmpty()); // prints false
