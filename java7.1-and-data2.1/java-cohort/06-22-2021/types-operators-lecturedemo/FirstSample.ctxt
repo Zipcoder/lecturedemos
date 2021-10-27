@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=FirstSample
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ multiline\ comments\ wheeee\n
+comment2.params=
+comment2.target=void\ ternaryOperators()
+comment3.params=
+comment3.target=void\ ternaryOperatorsExpanded()
+comment4.params=
+comment4.target=void\ postIncrementOperators()
+comment5.params=
+comment5.target=void\ preIncrementOperators()
+comment6.params=
+comment6.target=void\ primitiveConversion()
+comment7.params=
+comment7.target=void\ validVariableDeclarationBecauseOfScope()
+comment8.params=
+comment8.target=void\ invalidVariableDeclarationBecauseOfScope()
+numComments=9
