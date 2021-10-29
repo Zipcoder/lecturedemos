@@ -152,5 +152,3 @@ def string_find():
     print(first_index_of_substring)
     print(non_existent_index)
 
-
-string_find()
