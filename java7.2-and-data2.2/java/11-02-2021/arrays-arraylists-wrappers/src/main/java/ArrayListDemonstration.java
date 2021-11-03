@@ -42,8 +42,64 @@ public class ArrayListDemonstration {
         int firstElementPrimitive = list.get(0); // unboxed
     }
 
+    public static void demonstrateWrapperStaticMethods() {
+        Double negativeInfinity = Double.NEGATIVE_INFINITY;
+        Double positiveInfinity = Double.POSITIVE_INFINITY;
+        Double notANumber = Double.NaN;
+
+        System.out.println(negativeInfinity);
+        System.out.println(positiveInfinity);
+        System.out.println(notANumber);
+        System.out.println(positiveInfinity / 0);
+    }
+
+    public static void populateArrayListWithArrayElements() {
+        int[] someArray = {1, 7, 9, 10};
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int element : someArray) {
+            list.add(element);
+        }
+        System.out.println(list);
+    }
+
+    public static void copyArrayList() {
+        ArrayList<Integer> originalList = new ArrayList<>();
+        originalList.add(1);
+        originalList.add(7);
+        originalList.add(9);
+        originalList.add(10);
+
+        ArrayList<Integer> listClone = new ArrayList<>(originalList);
+        listClone.add(15);
+
+        System.out.println(originalList);
+        System.out.println(listClone);
+    }
+
+    public static void arrayListToArray() {
+        ArrayList<Integer> originalList = new ArrayList<>();
+        originalList.add(1);
+        originalList.add(7);
+        originalList.add(9);
+        originalList.add(10);
+
+        Integer[] array = originalList.toArray(new Integer[99999999]);
+
+    }
+
+    public static void demonstrateVarArgs(String... aBunchOfDifferentStrings) {
+        for(String element : aBunchOfDifferentStrings) {
+            System.out.println(element);
+        }
+    }
 
     public static void main(String[] args) {
+        System.out.println("First Example");
+        String[] preExistingArray = new String[]{"The","Quick","Brown","Fox","Jumps","Over","The","Lazy","Dog"};
+        demonstrateVarArgs(preExistingArray);
 
+        System.out.println("Second Example");
+        demonstrateVarArgs("The", "Quick", "Brown", "Fox");
     }
 }
