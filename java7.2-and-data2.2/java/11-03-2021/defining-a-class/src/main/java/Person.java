@@ -15,6 +15,14 @@ public class Person { // class signature
         this.myName = name; // setting instance variable
     }
 
+    // DON'T DO IT!
+    // violation of 'single responsibility principle'
+    // https://en.wikipedia.org/wiki/Single-responsibility_principle
+    public String setAndGetMyName(String myName) {
+        this.setMyName(myName);
+        return this.getMyName();
+    }
+
     public void setMyName(String myName) {
         this.myName = myName;
     }

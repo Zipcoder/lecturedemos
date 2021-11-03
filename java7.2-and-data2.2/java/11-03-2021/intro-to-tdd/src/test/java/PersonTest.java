@@ -12,6 +12,7 @@ public class PersonTest {
         // given
         Person person = new Person();
         String expectedName = "Leon";
+        Assert.assertNotEquals(expectedName, person.getName());
         person.setName(expectedName);
 
         // when
