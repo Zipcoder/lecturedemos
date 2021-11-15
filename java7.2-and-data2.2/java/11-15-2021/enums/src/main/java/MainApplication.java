@@ -5,10 +5,17 @@
  */
 public class MainApplication {
     public static void main(String[] args) {
-        Person[] persons = Person.values();
-        for(Person person : persons) {
-            System.out.println(person.getFirstName());
-            System.out.println(person.getLastName());
+        Suit heartEnumeration = Suit.HEARTS;
+        int orderInWhichItWasDeclared = heartEnumeration.ordinal();
+        String nameOfEnumeration = heartEnumeration.name();
+        System.out.println(nameOfEnumeration);
+        System.out.println(orderInWhichItWasDeclared);
+
+        System.out.println("=========================");
+        for (Suit enumeration : Suit.values()) {
+            System.out.println(enumeration.ordinal());
+            System.out.println(enumeration.name());
+            System.out.println("---------------");
         }
     }
 }
