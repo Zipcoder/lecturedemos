@@ -10,7 +10,7 @@ import demoparent.casino.utils.IOConsole;
  */
 public class Casino {
     public static void main(String[] args) {
-        CasinoAccountManagerInterface casinoAccountManager = new CasinoAccountManagerLogger();
+        CasinoAccountManagerInterface casinoAccountManager = new CasinoAccountManagerExtensiveLogger();
         IOConsole console = new IOConsole(AnsiColor.CYAN);
         String userDecision = null;
         do {
