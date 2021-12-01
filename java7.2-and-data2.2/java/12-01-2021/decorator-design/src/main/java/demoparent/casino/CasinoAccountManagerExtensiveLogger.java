@@ -11,7 +11,15 @@ import java.util.Collection;
  * @date 12/1/21 12:03 PM
  */
 public class CasinoAccountManagerExtensiveLogger implements CasinoAccountManagerInterface {
-    private CasinoAccountManagerInterface logger = new CasinoAccountManagerLogger();
+    private CasinoAccountManagerInterface logger;
+
+    public CasinoAccountManagerExtensiveLogger() {
+        this(new CasinoAccountManagerLogger());
+    }
+
+    public CasinoAccountManagerExtensiveLogger(CasinoAccountManagerInterface logger) {
+        this.logger = logger;
+    }
 
     @Override
     public void add(CasinoAccount casinoAccount) {
